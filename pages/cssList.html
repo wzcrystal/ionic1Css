@@ -1,0 +1,173 @@
+<ion-view view-title="Css 组件列表">
+    <ion-content class="has-header">
+        <div class="list">
+            <div class="item item-icon-right" ng-init="vm.header=false" ng-click="vm.header=!vm.header;">
+                header组件<i class="icon font-size18" ng-class="{'ion-plus-round':!vm.header,'ion-minus-round':vm.header}"></i>
+            </div>
+            <ul ng-if="vm.header" class="item-child">
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('header')">
+                    头部<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('headerBtn')">
+                    头部左右带有按钮<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('subHeader')">
+                    副标题<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+            </ul>
+
+            <div class="item item-icon-right" ng-click="vm.toPage('content')">
+                内容<i class="icon font-size18 ion-ios-arrow-right"></i>
+            </div>
+
+            <div class="item item-icon-right" ng-init="vm.footer=false" ng-click="vm.footer=!vm.footer;">
+                footer组件<i class="icon font-size18" ng-class="{'ion-plus-round':!vm.footer,'ion-minus-round':vm.footer}"></i>
+            </div>
+            <ul ng-if="vm.footer" class="item-child">
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('footer')">
+                    底部<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('footerBtn')">
+                    底部左右带有按钮<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('subFooter')">
+                    副底部<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+            </ul>
+
+            <div class="item item-icon-right" ng-init="vm.button=false" ng-click="vm.button=!vm.button;">
+                按钮组件<i class="icon font-size18" ng-class="{'ion-plus-round':!vm.button,'ion-minus-round':vm.button}"></i>
+            </div>
+            <ul ng-if="vm.button" class="item-child">
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('generalButton')">
+                    基础按钮<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('navButton')">
+                    导航按钮<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+            </ul>
+
+            <div class="item item-icon-right" ng-init="vm.list=false" ng-click="vm.list=!vm.list;">
+                列表组件<i class="icon font-size18" ng-class="{'ion-plus-round':!vm.list,'ion-minus-round':vm.list}"></i>
+            </div>
+            <ul ng-if="vm.list" class="item-child">
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('generalList')">
+                    基础列表<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('dividerList')">
+                    分隔符列表<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('iconList')">
+                    图标列表+按钮列表<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('insetList')">
+                    清单列表<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('avatarList')">
+                    头像列表<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('thumbnailList')">
+                    缩略图列表<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+            </ul>
+
+            <div class="item item-icon-right" ng-init="vm.card=false" ng-click="vm.card=!vm.card;">
+                卡片组件<i class="icon font-size18" ng-class="{'ion-plus-round':!vm.card,'ion-minus-round':vm.card}"></i>
+            </div>
+            <ul ng-if="vm.card" class="item-child">
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('generalCard')">
+                    基础卡片<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('headFooterCard')">
+                    带有头部与底部的卡片<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('listCard')">
+                    列表卡片<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('imageCard')">
+                    图像卡片<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('cardCase')">
+                    实例<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+            </ul>
+
+            <div class="item item-icon-right" ng-init="vm.form=false" ng-click="vm.form=!vm.form;">
+                表单组件<i class="icon font-size18" ng-class="{'ion-plus-round':!vm.form,'ion-minus-round':vm.form}"></i>
+            </div>
+            <ul ng-if="vm.form" class="item-child">
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('generalForm')">
+                    基础表单<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('floatForm')">
+                    浮动表单<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('listForm')">
+                    列表表单<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('iconForm')">
+                    图标表单<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('headForm')">
+                    头部表单<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('toggle')">
+                    切换开关<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('checkbox')">
+                    复选框<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('radio')">
+                    单选框<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('rang')">
+                    滑块控件<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('select')">
+                    选择器<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+            </ul>
+
+            <!--<div class="item item-icon-right" ng-init="vm.tab=false" ng-click="vm.tab=!vm.tab;">
+                tab组件<i class="icon font-size18" ng-class="{'ion-plus-round':!vm.tab,'ion-minus-round':vm.tab}"></i>
+            </div>
+            <ul ng-if="vm.tab" class="item-child">
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('iconTab')">
+                    纯图标tab<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('topIconTab')">
+                    顶部图标<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('leftIconTab')">
+                    左边图标<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('stripedTab')">
+                    条纹风格<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+            </ul>-->
+
+            <!--<div class="item item-icon-right" ng-init="vm.tab=false" ng-click="vm.tab=!vm.tab;">
+                栅格组件<i class="icon font-size18" ng-class="{'ion-plus-round':!vm.tab,'ion-minus-round':vm.tab}"></i>
+            </div>
+            <ul ng-if="vm.col" class="item-child">
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('iconTab')">
+                    栅格列宽<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('topIconTab')">
+                    偏移量的网格<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('leftIconTab')">
+                    左边图标<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+                <li class="item item-icon-right bgcolor-f1f1f1" ng-click="vm.toPage('stripedTab')">
+                    条纹风格<i class="icon font-size18 ion-ios-arrow-right"></i>
+                </li>
+            </ul>-->
+            <div class="item item-icon-right" ng-click="vm.toPage('col')">
+                栅格组件<i class="icon font-size18 ion-ios-arrow-right"></i>
+            </div>
+
+        </div>
+    </ion-content>
+
+</ion-view>
